@@ -1,0 +1,105 @@
+.nav-color{
+    background-image: url("../img/gray.jpg");
+}
+
+.font-satisfy{
+    font-family: 'Satisfy', cursive;
+    font-size: large;
+    color: black;
+}
+
+  
+.font-alphabet{
+    font-family: 'Ultra', serif;
+    font-size: x-large;
+}
+
+.text-black{
+    color: black!important;
+}
+
+.text-white{
+    color: white;
+}
+
+body{
+    background-color: gainsboro;
+    background-position: center;
+    
+}
+
+.bottom-bar{
+    border-bottom: 20px solid black;
+}
+
+.min-margin{
+    margin-top: .1rem;
+}
+
+
+.font-yellowtail{
+    font-family: 'Yellowtail', cursive;
+}
+
+.font-josefin{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.banner-area{
+    width: 100%;
+    min-height: 120px;
+}
+
+.main-text{
+    font-size: xxx-large; 
+}
+
+.font-gentium{
+    font-family: 'Gentium Book Basic', serif;
+}
+
+th{
+    padding-inline: .5rem;
+}
+
+.table{
+    text-align: center;
+}
+
+.search-input{
+    max-width: 500px;
+    min-width: 100px;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-inline: .3rem;
+}
+
+.order-icon{
+    cursor: pointer;
+}
+
+.arrows{
+    display: inline-flex;
+}
+
+.img-json{
+    max-height: 100px;
+
+}
+
+.text-info{
+    margin-inline: 10%;
+}
+
+.text-link:hover{
+    color: red;
+}
+
+.text-link{
+    text-decoration: none;
+    color: black;
+}
+
+.text-about{
+    text-decoration: underline;
+}
