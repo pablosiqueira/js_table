@@ -103,3 +103,13 @@ th{
 .text-about{
     text-decoration: underline;
 }
+
+.input-calc{
+    max-width: 100px;
+    color:black;
+    justify-content: center;
+}
+
+.second_table{
+    max-width: 400px;
+}

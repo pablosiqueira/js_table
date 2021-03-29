@@ -107,3 +107,34 @@ function classification_imc(imc){
     }
     return msg;
 }
+
+function calculate(){
+    var my_weight = document.getElementById("input_weight").value;
+    var my_height = document.getElementById("input_height").value;
+    var msg_place = document.getElementById("bmi_result");
+
+    if (!validate(my_weight) || !validate(my_height)){
+        if (!validate(my_weight) && !validate(my_height)){
+            msg_place.innerHTML = "Invalid weight and height"; 
+        }else if (!validate(my_weight)){
+            msg_place.innerHTML = "Invalid weight!"; 
+        }else{
+            msg_place.innerHTML = "Invalid height!";
+        }
+    }else{
+        var my_imc = calc_imc(my_weight, my_height);
+        var status = classification_imc(my_imc);
+        if (my_imc > 0){
+            msg_place.innerHTML = "Your BMI is " + my_imc + " and that means " + "'" + status + "'."; 
+        }
+    }
+    
+}
+
+function validate(number){
+    if (number <= 0 || number == "" || isNaN(number)){
+        return false;
+    }else{
+        return true;
+    }
+}

@@ -155,6 +155,72 @@
             </section>
 
             <section>
+              <h2 class="text-black fs-3 text-about text-center pb-3">BMI Classification</h2>
+              <table class="table second_table mx-auto table-striped table-hover 
+              table-bordered border-secondary table-responsive" id="cat_table">
+                <thead>
+                  <tr>
+                    <th scope="col">BMI</th>
+                    <th scope="col">Classification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Less than 17 </td> 
+                    <td>Very Underweight</td>
+                  </tr>
+                  <tr>
+                    <td>Between 17 and 18.4</td>
+                    <td>Underweight</td>
+                  </tr>
+                  <tr>
+                    <td>Between 18.5 and 24.9</td>
+                    <td>Normal</td>
+                  </tr>
+                  <tr>
+                    <td>Between 25 and 29.9</td>
+                    <td>Overweight</td>
+                  </tr>
+                  <tr>
+                    <td>Between 30 and 34.9</td>
+                    <td>Obesity Grade I</td>
+                  </tr>
+                  <tr>
+                    <td>Between 35 and 39.9</td>
+                    <td>Obesity Grade II</td>
+                  </tr>
+                  <tr>
+                    <td>More than 39.9</td>
+                    <td>Obesity Grade III</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section>
+              <div class="text-info pb-3 font-josefin text-center pt-3">
+                <h2 class="text-black fs-3 text-about">BMI Calculator</h2>
+                <p class=" fs-5 text-black">Calculate your body mass index.</p>
+                  <div class="row g-3  justify-content-center">
+                    <div class="col-md-6 input-calc">
+                      <label for="inputEmail4" class="form-label">Weight(kg)</label>
+                      <input type="text" class="form-control" id="input_weight" placeholder="80">
+                    </div>
+                    <div class="col-md-6 input-calc">
+                      <label for="inputPassword4" class="form-label" >Height(m)</label>
+                      <input type="text" class="form-control" id="input_height" placeholder="1.77">
+                    </div>
+                    <div class="col-12">
+                      <button  class="btn btn-dark" onclick="calculate()">Submit</button>
+                    </div>
+                    <div class="col-12">
+                      <p class=" fs-5 text-black" id="bmi_result"></p>
+                    </div>
+                  </div>    
+            </div>
+            </section>
+
+            <section>
               <div class="text-info pb-3 font-josefin text-center ">
                 <h2 class="text-black fs-3 text-about">About the Data</h2>
                 <p class=" fs-5 text-black">The data shown in the table was obtained from 
@@ -164,9 +230,7 @@
                   <a class="text-link" href="https://raw.githubusercontent.com/pablosiqueira/data/main/people.json" target="_blank">
                     <img class="img-json" src="img/list.png" alt="text file icon">
                     <p class="text-center  pt-1">File: "people.json"</p>
-                  </a>
-          
-                
+                  </a> 
             </div>
             </section>
 
